@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="dMXLb_Yb0xL3B1QMSUUN">
+    <mxGraphModel dx="994" dy="1465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="630" width="480" x="280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="120" width="380" x="330" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="VPC 10.0.0.0/16 - EU-region A" vertex="1">
+          <mxGeometry height="30" width="190" x="340" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;Offendtligt subnet 10.0.1.0/24&amp;nbsp;- Default deny&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="250" x="340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div&gt;Loadbalancer + WAF&lt;/div&gt;&lt;div&gt;Port 80 redirect to 443&lt;/div&gt;&lt;div&gt;Port 443 termineres her&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="336" x="350" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="210" width="380" x="330" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div&gt;Webinstanser&lt;/div&gt;&lt;div&gt;Containere på PaaS, autoskalering&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="320" x="360" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div&gt;Managed database&lt;/div&gt;&lt;div&gt;Krypteret, point-in-time&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="320" x="360" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Privat subnet 10.0.2.0/24 - Default deny" vertex="1">
+          <mxGeometry height="30" width="250" x="340" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div&gt;KMS og hemligheder&lt;/div&gt;&lt;div&gt;kryptering i hvile&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="330" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div&gt;Administration&lt;/div&gt;&lt;div&gt;RBAC, least privilege&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="330" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div&gt;Kopi i EU-region B&lt;/div&gt;&lt;div&gt;3-2-1, krypteret, point-in-time&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="480" x="280" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-18" edge="1" parent="1" source="jOQJPLBP3e_1NlhrcsJd-16" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;curved=1;exitX=0.688;exitY=0.125;exitDx=0;exitDy=0;entryX=0.882;entryY=1.012;entryDx=0;entryDy=0;endFill=0;startArrow=classic;startFill=1;" target="jOQJPLBP3e_1NlhrcsJd-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="830" as="sourcePoint" />
+            <mxPoint x="330" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-21" edge="1" parent="1" source="jOQJPLBP3e_1NlhrcsJd-11" style="endArrow=none;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endFill=0;startArrow=classic;startFill=1;" target="jOQJPLBP3e_1NlhrcsJd-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="830" as="sourcePoint" />
+            <mxPoint x="330" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-22" edge="1" parent="1" source="jOQJPLBP3e_1NlhrcsJd-10" style="endArrow=none;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;curved=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" target="jOQJPLBP3e_1NlhrcsJd-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="830" as="sourcePoint" />
+            <mxPoint x="330" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div&gt;Kunder&lt;/div&gt;HTTPS, port 443" vertex="1">
+          <mxGeometry height="60" width="190" x="50" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-24" edge="1" parent="1" source="jOQJPLBP3e_1NlhrcsJd-8" style="endArrow=none;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=0;startArrow=classic;startFill=1;" target="jOQJPLBP3e_1NlhrcsJd-23" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="830" as="sourcePoint" />
+            <mxPoint x="330" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div&gt;Medarbejdere på farten&lt;/div&gt;&lt;div&gt;VPN + MFA&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="190" x="50" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="&lt;div&gt;VPN site-to-site&lt;/div&gt;&lt;div&gt;med RBAC og least privilege&lt;/div&gt;&lt;div&gt;Kontor lan&lt;/div&gt;&lt;div&gt;*Gammel server&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="190" x="50" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-27" edge="1" parent="1" source="jOQJPLBP3e_1NlhrcsJd-9" style="endArrow=none;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endFill=0;startArrow=classic;startFill=1;" target="jOQJPLBP3e_1NlhrcsJd-25" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="830" as="sourcePoint" />
+            <mxPoint x="330" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-28" edge="1" parent="1" source="jOQJPLBP3e_1NlhrcsJd-9" style="endArrow=none;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" target="jOQJPLBP3e_1NlhrcsJd-26" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="830" as="sourcePoint" />
+            <mxPoint x="330" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jOQJPLBP3e_1NlhrcsJd-30" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;*Gammel server&lt;/h1&gt;&lt;p&gt;Ved migrering (online booking) containeriserers programmer og flyttes i cloud og data flyttes til database i cloud.&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="190" x="50" y="550" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
